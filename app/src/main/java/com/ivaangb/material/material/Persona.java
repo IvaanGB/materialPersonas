@@ -7,6 +7,7 @@ package com.ivaangb.material.material;
 public class Persona {
     private String cedula, nombre, apellido;
     private int sexo;
+    private String id;
 
     public int getFoto() {
         return foto;
@@ -18,12 +19,21 @@ public class Persona {
 
     private int foto;
 
-    public Persona(String cedula, String nombre, String apellido, int sexo, int foto) {
+    public Persona(String cedula, String nombre, String apellido, int sexo, String id, int foto) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.sexo = sexo;
+        this.id = id;
         this.foto = foto;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getCedula() {
