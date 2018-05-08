@@ -6,9 +6,19 @@ package com.ivaangb.material.material;
 
 public class Persona {
     private String cedula, nombre, apellido;
-    private int sexo, foto;
+    private int sexo;
 
-    public Persona(String cedula, String nombre, String apellido, int sexo) {
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+
+    private int foto;
+
+    public Persona(String cedula, String nombre, String apellido, int sexo, int foto) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -44,17 +54,11 @@ public class Persona {
         return sexo;
     }
 
-    public int getFoto(){
-        return foto;
-    }
 
     public void setSexo(int sexo) {
         this.sexo = sexo;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
-    }
 
     public void guardar(){
         Datos.guardar(this);
