@@ -13,6 +13,10 @@
     <string name="sexo">Sexo</string>
     <string name="modificar">Modificar</string>
     <string name="eliminar">Eliminar</string>
+    <string name="positivo">Si</string>
+    <string name="negativo">No</string>
+    <string name="pregunto_eliminacion">¿Está seguro que desea eliminar a esta persona?</string>
+
 
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>

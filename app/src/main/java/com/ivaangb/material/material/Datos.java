@@ -23,6 +23,10 @@ public class Datos {
         return personas;
     }
 
+    public static void eliminarPersona(Persona p){
+        databaseReference.child(db).child(p.getId()).removeValue();
+    }
+
     public static int fotoAleatoria(ArrayList<Integer> fotos){
         int fotoSeleccionada;
 
@@ -42,6 +46,10 @@ public class Datos {
     }
 
     public static void guardar(Persona p){
+        databaseReference.child(db).child(p.getId()).setValue(p);
+    }
+
+    public static void modificarPersona(Persona p){
         databaseReference.child(db).child(p.getId()).setValue(p);
     }
 
