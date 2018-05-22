@@ -37,6 +37,10 @@ public class Datos {
         return databaseReference.push().getKey();
     }
 
+    public static void setPersonas(ArrayList<Persona> personas){
+        Datos.personas = personas;
+    }
+
     public static void guardar(Persona p){
         databaseReference.child(db).child(p.getId()).setValue(p);
     }

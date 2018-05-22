@@ -8,6 +8,12 @@
     <string name="guardar">Guardar</string>
     <string name="borrar">Borrar</string>
 
+    <string name="limpiar">Limpiar</string>
+    <string name="informacion">Información</string>
+    <string name="sexo">Sexo</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
     <string-array name="sexo">

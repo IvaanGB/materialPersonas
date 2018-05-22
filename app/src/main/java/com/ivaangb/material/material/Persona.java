@@ -28,6 +28,10 @@ public class Persona {
         this.foto = foto;
     }
 
+    public Persona(){
+
+    }
+
     public String getId() {
         return id;
     }
